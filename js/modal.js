@@ -3,12 +3,22 @@ export const modal = {
   message: document.querySelector('.modal .title span'),
   buttonClose: document.querySelector('.modal button.close'),
   buttonSubmit: document.querySelector('.modal button.submit'),
+  alertError: document.querySelector('.alert-error'),
 
   open() {
     modal.wrapper.classList.add('open');
   },
+
   close() {
     modal.wrapper.classList.remove('open');
+  },
+
+  openAlertError() {
+    modal.alertError.classList.add('open');
+  },
+
+  closeAlertError() {
+    modal.alertError.classList.remove('open');
   },
 };
 

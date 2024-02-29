@@ -14,7 +14,7 @@
   --tt-label: #00453a;
   --tt-input: #212529;
   --ot-input: #02799d;
-  --bd-input: rgba(73, 80, 0.3);
+  --bd-input: rgba(73, 80, 87, 0.3);
   --tt-placeholder: rgba(73, 80, 87, 0.5);
   --bg-input: #dce2e9;
 
@@ -183,5 +183,5 @@ form button:hover {
   visibility: hidden;
   opacity: 0;
   transform: translateY(-30px);
-  transition: transform 0.5s;
+  transition: transform 0.5s ease-in-out;
 }
