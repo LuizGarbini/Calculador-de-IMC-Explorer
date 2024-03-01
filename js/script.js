@@ -7,6 +7,8 @@ const inputWeight = document.querySelector('#weight');
 const inputHeight = document.querySelector('#height');
 
 form.onsubmit = (event) => {
+  console.log(event);
+
   event.preventDefault();
 
   const weight = inputWeight.value;
@@ -16,10 +18,13 @@ form.onsubmit = (event) => {
 
   if (weightOrHeightIsNotANumber) {
     alertError.open();
+    console.log('weightOrHeightIsNotANumber');
     return;
   }
 
-  alertError.close();
+  console.log('alertError');
+
+  
 
   const result = calculateIMC(weight, height);
   displayResultMessage(result);
